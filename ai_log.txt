@@ -384,3 +384,20 @@ Updated the project README to reflect the current state of the project:
    - Created a clean, well-structured format with proper Markdown formatting
 
 The updated README now serves as a comprehensive guide to the project, making it easier for anyone to understand its structure, features, and how to maintain or extend it. This documentation will be valuable for future development and onboarding new contributors to the project.
+
+2025-03-02 09:50:00 AM (America/New_York, UTC-5:00)
+
+Fixed GraphQL query warnings in non-page components:
+
+1. Updated Template Files:
+   - Modified `src/templates/quote.js` to use `useStaticQuery` instead of exported page queries
+   - Modified `src/templates/quick-thing.js` to use `useStaticQuery` instead of exported page queries
+   - Implemented proper error handling for when content isn't found
+
+2. Implementation Details:
+   - Replaced `export const pageQuery` with the `useStaticQuery` hook in both template files
+   - Updated the component logic to find specific content by ID from all markdown nodes
+   - Added conditional rendering to handle cases where content isn't found
+   - Maintained the same UI and functionality while fixing the underlying query issue
+
+This change resolves the warnings about GraphQL queries in non-page components by following Gatsby's recommended approach of using `useStaticQuery` for components that aren't directly used as pages. The site now builds without warnings and all functionality works as expected.
