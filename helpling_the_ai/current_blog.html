@@ -1,0 +1,644 @@
+<html lang="en" class="dark-mode"><head>
+
+    <title>KonTheCat's Box</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" as="style" href="/assets/built/screen.css?v=f39663a62b">
+    <link rel="preload" as="script" href="/assets/built/casper.js?v=f39663a62b">
+
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css?v=f39663a62b">
+
+    <meta name="description" content="Adventures in Azure, Microsoft 365, PowerShell, and everything in between!">
+    <link rel="icon" href="https://blog.konthecat.com/content/images/size/w256h256/2020/09/konthecat-small.png" type="image/png">
+    <link rel="canonical" href="https://blog.konthecat.com/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="KonTheCat's Box">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KonTheCat's Box">
+    <meta property="og:description" content="Adventures in Azure, Microsoft 365, PowerShell, and everything in between!">
+    <meta property="og:url" content="https://blog.konthecat.com/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="KonTheCat's Box">
+    <meta name="twitter:description" content="Adventures in Azure, Microsoft 365, PowerShell, and everything in between!">
+    <meta name="twitter:url" content="https://blog.konthecat.com/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "KonTheCat&#x27;s Box",
+        "url": "https://blog.konthecat.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://blog.konthecat.com/content/images/size/w256h256/2020/09/konthecat-small.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "url": "https://blog.konthecat.com/",
+    "mainEntityOfPage": "https://blog.konthecat.com/",
+    "description": "Adventures in Azure, Microsoft 365, PowerShell, and everything in between!"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.54">
+    <link rel="alternate" type="application/rss+xml" title="KonTheCat's Box" href="https://blog.konthecat.com/rss/">
+    <script defer="" src="https://cdn.jsdelivr.net/ghost/portal@~2.33/umd/portal.min.js" data-i18n="false" data-ghost="https://blog.konthecat.com/" data-key="54191230f4d35091ef4a6ac3e3" data-api="https://blog.konthecat.com/ghost/api/content/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer="" src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="54191230f4d35091ef4a6ac3e3" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="https://blog.konthecat.com/" crossorigin="anonymous"></script>
+    
+    <link href="https://blog.konthecat.com/webmentions/receive/" rel="webmention">
+    <script defer="" src="/public/cards.min.js?v=f39663a62b"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=f39663a62b">
+    <script defer="" src="/public/comment-counts.min.js?v=f39663a62b" data-ghost-comments-counts-api="https://blog.konthecat.com/members/api/comments/counts/"></script>
+    <script defer="" src="/public/member-attribution.min.js?v=f39663a62b"></script>
+    <!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WZG7TYS708"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WZG7TYS708');
+</script><style>:root {--ghost-accent-color: #15171A;}</style>
+
+<style>.gh-portal-account-header{display:flex;flex-direction:column;align-items:center;margin:0 0 32px}.gh-portal-account-header .gh-portal-avatar{margin:6px 0 8px!important}.gh-portal-account-data{margin-bottom:40px}footer.gh-portal-account-footer{display:flex}.gh-portal-account-footer.paid{margin-top:12px}.gh-portal-account-footermenu{display:flex;align-items:center;list-style:none;padding:0;margin:0}.gh-portal-account-footerright{display:flex;flex-grow:1;align-items:center;justify-content:flex-end}.gh-portal-account-footermenu li{margin-right:16px}.gh-portal-account-footermenu li:last-of-type{margin-right:0}.gh-portal-freeaccount-newsletter{display:flex;align-items:center;justify-content:space-between;margin-top:24px}.gh-portal-freeaccount-newsletter .label{display:flex;flex-direction:column;flex-grow:1}.gh-portal-free-ctatext{margin-top:-12px}.gh-portal-cancelcontinue-container{margin:24px 0 32px}.gh-portal-list-detail .gh-portal-email-notice{display:flex;align-items:center;gap:5px;margin-top:6px;color:var(--red);font-weight:500;font-size:1.25rem;letter-spacing:.2px}.gh-portal-email-notice-icon{width:20px;height:20px}.gh-portal-billing-button-loader{width:32px;height:32px;margin-right:-3px;opacity:.6}.gh-portal-product-icon{width:52px;margin-right:12px;border-radius:2px}.gh-portal-account-discountcontainer{position:relative;display:flex;align-items:center}.gh-portal-account-old-price{text-decoration:line-through;color:var(--grey9)!important}.gh-portal-account-tagicon{width:16px;height:16px;color:var(--brandcolor);margin-right:5px;z-index:999}@media (max-width: 390px){.gh-portal-account-footer{padding:0!important}}@media (max-width: 340px){.gh-portal-account-footer{padding:0!important;flex-wrap:wrap;gap:12px}.gh-portal-account-footer .gh-portal-account-footerright{justify-content:flex-start}}.gh-email-suppressed-page-title{margin-bottom:14px}.gh-email-suppressed-page-icon{display:block;width:38px;height:38px;margin:0 auto 18px}.gh-email-suppressed-page-text{padding:0 14px;text-align:center;color:var(--grey6)}.gh-email-faq-footer-text{color:var(--grey8)}.gh-portal-list-detail.email-newsletter .gh-email-faq-page-button{display:block;margin-top:3px}.accountEmail .gh-email-faq-page-button{margin-left:4px}.emailReceivingFAQ .gh-portal-btn-back,.emailReceivingFAQ .gh-portal-btn-back:hover{left:calc(6vmin - 14px)}.emailReceivingFAQ .gh-portal-closeicon-container{right:calc(6vmin - 20px)}@media (max-width: 480px){.emailReceivingFAQ .gh-portal-btn-back,.emailReceivingFAQ .gh-portal-btn-back:hover{left:16px}.emailReceivingFAQ .gh-portal-closeicon-container{right:24px}}.gh-email-faq-page-button{color:var(--brandcolor);cursor:pointer;background:none;transition:color linear .1s;font-size:1.45rem}</style><style>.App{text-align:center}.App-logo{height:40vmin;pointer-events:none}@media (prefers-reduced-motion: no-preference){.App-logo{animation:App-logo-spin infinite 20s linear}}.App-header{background-color:#282c34;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:calc(10px + 2vmin);color:#fff}.App-link{color:#61dafb}@keyframes App-logo-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+</style><style id="fit-vids-style">.fluid-width-video-container{flex-grow: 1;width:100%;}.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+<body class="home-template is-head-left-logo has-cover is-dropdown-loaded" data-new-gr-c-s-check-loaded="14.1224.0" data-gr-ext-installed="">
+<div class="viewport">
+
+    <header id="gh-head" class="gh-head outer">
+        <div class="gh-head-inner inner">
+            <div class="gh-head-brand">
+                <a class="gh-head-logo no-image" href="https://blog.konthecat.com">
+                        KonTheCat's Box
+                </a>
+                <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                <button class="gh-burger"></button>
+            </div>
+
+            <nav class="gh-head-menu">
+                <ul class="nav">
+    <li class="nav-home nav-current"><a href="https://blog.konthecat.com/">Home</a></li>
+    <li class="nav-author"><a href="https://blog.konthecat.com/author/">Author</a></li>
+    <li class="nav-quick-things"><a href="https://blog.konthecat.com/basic-azure-things-i-forget-and-spend-too-much-time-looking-up/">Quick Things</a></li>
+    <li class="nav-quotes"><a href="https://blog.konthecat.com/quotes/">Quotes</a></li>
+</ul>
+
+            </nav>
+
+            <div class="gh-head-actions">
+                    <button class="gh-search gh-icon-btn" data-ghost-search=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+                    <div class="gh-head-members">
+                                <a class="gh-head-link gh-portal-close" href="#/portal/signin" data-portal="signin">Sign in</a>
+                                <a class="gh-head-button gh-portal-close" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="site-content">
+        
+<div class="site-header-content outer">
+
+
+        <div class="site-header-inner inner">
+                    <h1 class="site-title">KonTheCat's Box</h1>
+                <p class="site-description">Adventures in Azure, Microsoft 365, PowerShell, and everything in between!</p>
+        </div>
+
+</div>
+
+<main id="site-main" class="site-main outer">
+<div class="inner posts">
+
+    <div class="post-feed">
+            
+<article class="post-card post no-image post-card-large">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/creating-cosmos-db-container-with-vector-embedding-policy-without-account-key/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Creating Cosmos DB container with vector embedding policy without account key
+                </h2>
+            </header>
+                <div class="post-card-excerpt">TL;DR
+
+Use the CosmosDBManagementClient (control plane), not the CosmosClient (data plane) when creating a Cosmos DB container with a vector embedding and authenticating with Entra ID. Key-based authentication works just fine with the CosmosClient. Hopefully, Microsoft will fix this soon. In the meantime, hopefully, this saves someone some time.</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2024-12-08">Dec 8, 2024</time>
+                <span class="post-card-meta-length">1 min read</span>
+                
+        </footer>
+
+    </div>
+
+</article>
+            
+<article class="post-card post no-image dynamic">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/memeql-day/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    MemeQL Day
+                </h2>
+            </header>
+                <div class="post-card-excerpt">Today I queried for a meme for the first time, making today MemeQL Day.
+
+Content ratings come from this: https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/harm-categories
+Text extraction and captioning courtesy of: https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-image-analysis?tabs=4-0
+Database is Cosmos DB.</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2023-07-27">Jul 27, 2023</time>
+                <span class="post-card-meta-length">1 min read</span>
+                
+        </footer>
+
+    </div>
+
+</article>
+            
+<article class="post-card post tag-hash-import-2023-07-13-02-49 no-image dynamic">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/save-the-time-a-guide-for-the-manager-of-the-mildly-competent/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Save the time: a guide for the manager of the mildly competent.
+                </h2>
+            </header>
+                <div class="post-card-excerpt">You have found yourself managing the mildly competent. You are busy. Doing new things is hard. But it’s ok, this will be mostly a list of things to not do. The only new thing you will need to do here is to be mildly more aware of yourself and</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2023-07-12">Jul 12, 2023</time>
+                <span class="post-card-meta-length">4 min read</span>
+                
+        </footer>
+
+    </div>
+
+</article>
+            
+<article class="post-card post tag-hash-import-2023-07-13-02-49 featured">
+
+    <a class="post-card-image-link" href="/dynamic-dns-in-azure-v2-heartbeat-logs-logic-apps-kql/">
+
+        <img class="post-card-image" srcset="/content/images/size/w300/2022/07/kql-rabbit-hole-1.png 300w,
+                    /content/images/size/w600/2022/07/kql-rabbit-hole-1.png 600w,
+                    /content/images/size/w1000/2022/07/kql-rabbit-hole-1.png 1000w,
+                    /content/images/size/w2000/2022/07/kql-rabbit-hole-1.png 2000w" sizes="(max-width: 1000px) 400px, 800px" src="/content/images/size/w600/2022/07/kql-rabbit-hole-1.png" alt="Dynamic DNS in Azure v2: Heartbeat logs, Logic Apps, KQL - a concept" loading="lazy">
+
+
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/dynamic-dns-in-azure-v2-heartbeat-logs-logic-apps-kql/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                        <span class="post-card-featured"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.49365 4.58752C3.53115 6.03752 2.74365 7.70002 2.74365 9.25002C2.74365 10.6424 3.29678 11.9778 4.28134 12.9623C5.26591 13.9469 6.60127 14.5 7.99365 14.5C9.38604 14.5 10.7214 13.9469 11.706 12.9623C12.6905 11.9778 13.2437 10.6424 13.2437 9.25002C13.2437 6.00002 10.9937 3.50002 9.16865 1.68127L6.99365 6.25002L4.49365 4.58752Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg> Featured</span>
+                </div>
+                <h2 class="post-card-title">
+                    Dynamic DNS in Azure v2: Heartbeat logs, Logic Apps, KQL - a concept
+                </h2>
+            </header>
+                <div class="post-card-excerpt">TL; DR - We take real public IP data from heartbeat logs of VM Insights. We also use Logic Apps to add in tag data, which connects computers with hostnames, as well as Azure DNS data, which gives us the DNS IPs for hostnames. Where we find that the heartbeat</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2022-07-18">Jul 18, 2022</time>
+                <span class="post-card-meta-length">4 min read</span>
+                
+        </footer>
+
+    </div>
+
+</article>
+            
+<article class="post-card post tag-hash-import-2023-07-13-02-49 featured no-image">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/azure-vpn-gateway-can-forward-spoke-hub-spoke-traffic-etc/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                        <span class="post-card-featured"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.49365 4.58752C3.53115 6.03752 2.74365 7.70002 2.74365 9.25002C2.74365 10.6424 3.29678 11.9778 4.28134 12.9623C5.26591 13.9469 6.60127 14.5 7.99365 14.5C9.38604 14.5 10.7214 13.9469 11.706 12.9623C12.6905 11.9778 13.2437 10.6424 13.2437 9.25002C13.2437 6.00002 10.9937 3.50002 9.16865 1.68127L6.99365 6.25002L4.49365 4.58752Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg> Featured</span>
+                </div>
+                <h2 class="post-card-title">
+                    Azure virtual network gateway can forward spoke-hub-spoke traffic, etc.
+                </h2>
+            </header>
+                <div class="post-card-excerpt">Why this?
+
+Glad you asked, several reasons:
+1. Studying for the AZ-700, the Azure networking exam, and figured I would do myself that which seems to have the status of slightly more complicated than hello-world in the Azure networking realm - user defined routing, traffic between spoke vNets through a</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2022-07-05">Jul 5, 2022</time>
+                <span class="post-card-meta-length">4 min read</span>
+                
+        </footer>
+
+    </div>
+
+</article>
+            
+<article class="post-card post tag-hash-import-2023-07-13-02-49 no-image">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/private-dns-in-azure-its-always-dns/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Private DNS in Azure - It's always DNS
+                </h2>
+            </header>
+                <div class="post-card-excerpt">It's Always DNS
+
+
+As system administrators well know, DNS matters. If you doubt this, just Google "It's always DNS" and you will find no shortage of r/sysadmin stories explaining how it is always DNS. This does not change in Azure, especially if your Azure environment still includes Active Directory.</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2022-04-23">Apr 23, 2022</time>
+                <span class="post-card-meta-length">5 min read</span>
+                
+        </footer>
+
+    </div>
+
+</article>
+            
+<article class="post-card post tag-hash-import-2023-07-13-02-49 no-image">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/microsoft-certifications-why-and-how/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Microsoft Certifications: Why and How
+                </h2>
+            </header>
+                <div class="post-card-excerpt">Establishing Credibility - or Why Should I Listen to This Guy?
+
+
+I think you should read this if you have some interest in getting Microsoft certifications, especially if you are at the start of your certification journey, or you are not getting certs as quickly as you would like to,</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2021-04-24">Apr 24, 2021</time>
+                <span class="post-card-meta-length">8 min read</span>
+                
+        </footer>
+
+    </div>
+
+</article>
+            
+<article class="post-card post tag-hash-import-2023-07-13-02-49">
+
+    <a class="post-card-image-link" href="/dynamic-dns-with-azure-automation-rubook-hybrid-worker/">
+
+        <img class="post-card-image" srcset="/content/images/size/w300/2020/09/2016_10_24_Automation-What-sNew-00.png 300w,
+                    /content/images/size/w600/2020/09/2016_10_24_Automation-What-sNew-00.png 600w,
+                    /content/images/size/w1000/2020/09/2016_10_24_Automation-What-sNew-00.png 1000w,
+                    /content/images/size/w2000/2020/09/2016_10_24_Automation-What-sNew-00.png 2000w" sizes="(max-width: 1000px) 400px, 800px" src="/content/images/size/w600/2020/09/2016_10_24_Automation-What-sNew-00.png" alt="Dynamic DNS with Azure Automation Runbook Hybrid Worker" loading="lazy">
+
+
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/dynamic-dns-with-azure-automation-rubook-hybrid-worker/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Dynamic DNS with Azure Automation Runbook Hybrid Worker
+                </h2>
+            </header>
+                <div class="post-card-excerpt">TL;DR
+
+Here we use an Azure Automation Hybrid worker to execute a runbook on a local computer whose public IP address we want to use to update an A record in Azure DNS. The main advantage of this approach is the monitoring and manageability one gets in effect for</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2020-09-13">Sep 13, 2020</time>
+                <span class="post-card-meta-length">7 min read</span>
+                
+        </footer>
+
+    </div>
+
+</article>
+            
+<article class="post-card post tag-hash-import-2023-07-13-02-49 no-image">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/where-is-invocationid/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Where is InvocationId in Azure Function PowerShell v2?
+                </h2>
+            </header>
+                <div class="post-card-excerpt">Short version:
+For the v1 runtime, there is a nice document that describes where this is. https://github.com/Azure/azure-functions-host/wiki/Retrieving-information-about-the-currently-running-function
+For the v2 runtime, there was no such luck. After looking at the environment variables &nbsp;and just the variables available when running the function I found it</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2019-11-26">Nov 26, 2019</time>
+                <span class="post-card-meta-length">1 min read</span>
+                
+        </footer>
+
+    </div>
+
+</article>
+            
+<article class="post-card post tag-azure-ad tag-aad tag-disable-user tag-expire-user tag-logic-app tag-hash-import-2023-07-13-02-49 no-image">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/schedule-disabling-azure-ad-user-with-a-logic-app/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                        <span class="post-card-primary-tag">Azure AD</span>
+                </div>
+                <h2 class="post-card-title">
+                    Schedule Disabling Azure AD User with a Logic App
+                </h2>
+            </header>
+                <div class="post-card-excerpt">Schedule disabling an Azure AD user with a Logic App!</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2019-09-23">Sep 23, 2019</time>
+                <span class="post-card-meta-length">1 min read</span>
+                
+        </footer>
+
+    </div>
+
+</article>
+            
+<article class="post-card post tag-hash-import-2023-07-13-02-49 no-image">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/a-tale-of-backup-vault-deletion/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    A tale of Backup Vault deletion
+                </h2>
+            </header>
+                <div class="post-card-excerpt">So I had a backup vault that was backing up an Azure Files share. From the Portal I removed the share a protected item, so the backup vault now had no protected items. So now I should be able to delete the vault, right? Nope.
+
+So I took a look</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2019-09-06">Sep 6, 2019</time>
+                <span class="post-card-meta-length">1 min read</span>
+                
+        </footer>
+
+    </div>
+
+</article>
+            
+<article class="post-card post tag-hash-import-2023-07-13-02-49 featured no-image">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/monitoring-the-office-365-audit-log-for-msps/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                        <span class="post-card-featured"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.49365 4.58752C3.53115 6.03752 2.74365 7.70002 2.74365 9.25002C2.74365 10.6424 3.29678 11.9778 4.28134 12.9623C5.26591 13.9469 6.60127 14.5 7.99365 14.5C9.38604 14.5 10.7214 13.9469 11.706 12.9623C12.6905 11.9778 13.2437 10.6424 13.2437 9.25002C13.2437 6.00002 10.9937 3.50002 9.16865 1.68127L6.99365 6.25002L4.49365 4.58752Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg> Featured</span>
+                </div>
+                <h2 class="post-card-title">
+                    Monitoring the Office 365 Audit Log - For MSPs (Legacy)
+                </h2>
+            </header>
+                <div class="post-card-excerpt">Note: With the changes to security requirements for Microsoft partners this solution is no longer feasible, as it relies on being able to authenticate into an account that has delegated admin access to client tenants without MFA. It will be kept around for demonstration purposes.
+
+Does this sound too familiar?</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2019-04-18">Apr 18, 2019</time>
+                <span class="post-card-meta-length">3 min read</span>
+                
+        </footer>
+
+    </div>
+
+</article>
+            
+<article class="post-card post tag-hash-import-2023-07-13-02-49 no-image">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/exception-calling-execute-with-1-argument-s-object-reference-not-set-to-an-instance-of-an-object-add-storagetablerow-error/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Exception calling “Execute” with “1” argument(s): “Object reference not set to an instance of an object.” – Add-StorageTableRow error
+                </h2>
+            </header>
+                <div class="post-card-excerpt">Google searches for the error lead down the path of errors with Azure tools. This was not the issue for me. The issue for me was that some of the keys in the hashtable I was using to submit the other entity properties were null. Below is the code for</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2019-04-17">Apr 17, 2019</time>
+                <span class="post-card-meta-length">9 min read</span>
+                
+        </footer>
+
+    </div>
+
+</article>
+            
+<article class="post-card post tag-hash-import-2023-07-13-02-49 no-image">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="/untitled/">
+            <header class="post-card-header">
+                <div class="post-card-tags">
+                </div>
+                <h2 class="post-card-title">
+                    Azure Storage Tables &amp; PowerShell – Issues encountered
+                </h2>
+            </header>
+                <div class="post-card-excerpt">Here are some issues I have run into that I have not found clear answers for elsewhere:
+
+ * Do not attempt to use the Azure timestamp property in filters, make your own.
+ * If you are sending a hash table make sure all the keys have data. If you do not you</div>
+        </a>
+
+        <footer class="post-card-meta">
+            <time class="post-card-meta-date" datetime="2019-04-17">Apr 17, 2019</time>
+                
+        </footer>
+
+    </div>
+
+</article>
+    </div>
+
+    <nav class="pagination">
+    <span class="page-number">Page 1 of 1</span>
+</nav>
+
+
+</div>
+</main>
+
+    </div>
+
+    <footer class="site-footer outer">
+        <div class="inner">
+            <section class="copyright"><a href="https://blog.konthecat.com">KonTheCat's Box</a> © 2025</section>
+            <nav class="site-footer-nav">
+                
+            </nav>
+            <div class="gh-powered-by"><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
+        </div>
+    </footer>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+</script>
+<script src="/assets/built/casper.js?v=f39663a62b"></script>
+<script>
+$(document).ready(function () {
+    // Mobile Menu Trigger
+    $('.gh-burger').click(function () {
+        $('body').toggleClass('gh-head-open');
+    });
+    // FitVids - Makes video embeds responsive
+    $(".gh-content").fitVids();
+});
+</script>
+
+
+
+
+
+<div id="ghost-portal-root"></div><div id="sodo-search-root"></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
