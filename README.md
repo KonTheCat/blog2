@@ -105,3 +105,37 @@ featured: true
 - GraphQL
 - Markdown (with gatsby-transformer-remark)
 - CSS
+
+## Poetic Summary
+
+### Based on the AI log so far, GPT-4o had this to say:
+
+In the realm of corporate dreams, where code and pixels dance,
+A saga unfolds, of a blog's grand advance.
+In the year twenty-twenty-five, on a March morning bright,
+A Gatsby blog was born, replacing Ghost's spectral light.
+
+With Markdown scrolls and structured halls, the project took its form,
+Components and templates crafted, a digital norm.
+A layout reusable, a template for each post,
+Global CSS adorned, a site to proudly boast.
+
+Pages unfurled like banners, home, blog, and author’s tale,
+A 404 for wanderers, when paths would sometimes fail.
+Content flowed in Markdown, with metadata's grace,
+Images handled deftly, each post found its place.
+
+Yet the journey was not over, enhancements came in waves,
+Featured images and styling, the blog's visage it saves.
+Dark mode's shadowy embrace, a theme both bold and stark,
+Hover effects and animations, a user’s journey to embark.
+
+The blog moved to the root, aesthetics redefined,
+A modern layout emerged, with shadows intertwined.
+Navigation grew in stature, hierarchical and grand,
+A dedicated blogs page, a well-organized land.
+
+In the footer, a line of wit, "Vibed with Claude 3.7 Sonnet,"
+A nod to the digital muse, in this corporate sonnet.
+Thus, the blog stands ready, a testament to code,
+In the epic of the internet, its story is bestowed..
