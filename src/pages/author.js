@@ -7,13 +7,24 @@ const AuthorPage = ({ data }) => {
   const { frontmatter, html } = markdownRemark;
 
   return (
-    <Layout pageTitle={frontmatter.title}>
-      <article className="blog-post">
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </article>
+    <Layout>
+      <div className="blogs-page">
+        <h1 className="page-title">{frontmatter.title}</h1>
+
+        <div className="blogs-layout">
+          <div className="blogs-main-content">
+            <article className="blog-post">
+              <div
+                className="blog-post-content"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            </article>
+          </div>
+          <div className="blogs-sidebar">
+            {/* Sidebar content removed as requested */}
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 };

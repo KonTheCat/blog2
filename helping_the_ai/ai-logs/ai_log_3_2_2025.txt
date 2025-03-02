@@ -401,3 +401,94 @@ Fixed GraphQL query warnings in non-page components:
    - Maintained the same UI and functionality while fixing the underlying query issue
 
 This change resolves the warnings about GraphQL queries in non-page components by following Gatsby's recommended approach of using `useStaticQuery` for components that aren't directly used as pages. The site now builds without warnings and all functionality works as expected.
+
+2025-03-02 11:39:45 AM (America/New_York, UTC-5:00)
+
+Migrated a blog post from the original Ghost blog to the new Gatsby blog:
+
+1. Content Migration:
+   - Created a new markdown file `src/content/cosmos-db-vector-embedding.md` for the blog post
+   - Migrated the content from the original post at blog.konthecat.com
+   - Preserved the original formatting, headings, and code blocks
+   - Added appropriate frontmatter with slug, date, title, and featured status
+
+2. Image Handling:
+   - Used an existing image as a temporary placeholder for the featured image
+   - Set up the post to use the Azure Functions image until a more appropriate Cosmos DB image is available
+
+3. Post Structure:
+   - Maintained the original post structure with TL;DR, Why, and Sample Code sections
+   - Preserved the code formatting for the Python sample
+   - Ensured all links from the original post were maintained
+
+The blog post about creating Cosmos DB containers with vector embedding policy has been successfully migrated to the new Gatsby blog, maintaining its original content and structure while adapting it to the new blog's format and styling.
+
+2025-03-02 12:07:10 PM (America/New_York, UTC-5:00)
+
+Migrated 11 blog posts from the original blog.konthecat.com to the Gatsby project:
+
+1. Content Migration Process:
+   - Fetched content from each blog post URL using the web research tool
+   - Created appropriate directories for images when needed
+   - Downloaded all images referenced in the posts
+   - Created markdown files with proper frontmatter (slug, date, title, featured image, etc.)
+   - Updated image paths in the content to point to the local images
+
+2. Migrated Blog Posts:
+   - MemeQL Day
+   - Dynamic DNS in Azure v2: Heartbeat logs, Logic Apps, KQL
+   - Azure virtual network gateway can forward spoke-hub-spoke traffic, etc.
+   - Private DNS in Azure - It's always DNS
+   - Microsoft Certifications: Why and How
+   - Dynamic DNS with Azure Automation Runbook Hybrid Worker
+   - Where is InvocationId in Azure Function PowerShell v2?
+   - Schedule Disabling Azure AD User with a Logic App
+   - A tale of Backup Vault deletion
+   - Monitoring the Office 365 Audit Log - For MSPs (Legacy)
+   - Exception calling "Execute" with "1" argument(s): "Object reference not set to an instance of an object." – Add-StorageTableRow error
+
+3. Image Management:
+   - Created organized directories for each post's images in src/images/blog/
+   - Downloaded and renamed images to be more descriptive
+   - Updated all image references in the markdown content
+
+All 11 blog posts are now available in the src/content directory with their associated images in src/images/blog/[post-specific-directory]. The posts maintain their original content and formatting while being adapted to the Gatsby blog system.
+
+2025-03-02 12:52:20 PM (America/New_York, UTC-5:00)
+
+Added a favicon to the site:
+
+1. Favicon Implementation:
+   - Installed the gatsby-plugin-manifest package using npm
+   - Configured the plugin in gatsby-config.js to use the KonTheCat32x32.png image as the favicon
+   - Set appropriate manifest options including name, short_name, and display settings
+   - Used the existing image at src/images/blog/KonTheCat32x32.png as the favicon source
+
+2. Testing and Verification:
+   - Started the Gatsby development server to verify the favicon implementation
+   - Confirmed the favicon appears correctly in the browser tab
+   - Ensured the manifest plugin was properly configured for optimal browser compatibility
+
+The site now has a custom favicon that displays in browser tabs and bookmarks, enhancing the site's branding and professional appearance. The implementation uses the Gatsby recommended approach with the manifest plugin, which also provides PWA capabilities if needed in the future.
+
+2025-03-02 1:18:58 PM (America/New_York, UTC-5:00)
+
+Removed the Blog Archive from author, quick-things, and quotes pages while maintaining layout:
+
+1. Modified Page Components:
+   - Updated src/pages/author.js, src/pages/quick-things.js, and src/pages/quotes.js to remove the BlogNavigation component
+   - Removed the import of BlogNavigation from all three files
+   - Removed the allMarkdownRemark GraphQL query that was used to fetch posts for the navigation
+   - Kept the empty sidebar div with a comment to maintain the two-column layout structure
+
+2. Simplified GraphQL Queries:
+   - Removed the allMarkdownRemark query section from all three page components
+   - Simplified the data destructuring to only use markdownRemark instead of both markdownRemark and allMarkdownRemark
+   - Removed the posts variable that was previously used for the BlogNavigation component
+
+3. Maintained Layout Structure:
+   - Preserved the blogs-layout class and two-column structure
+   - Kept the blogs-sidebar div empty but intact to maintain the same visual layout
+   - Ensured the main content still appears in the blogs-main-content column
+
+This change removes the Blog Archive navigation from the author, quick-things, and quotes pages while preserving the two-column layout structure. The pages now have a cleaner appearance without the archive links, but maintain the same overall layout and formatting.

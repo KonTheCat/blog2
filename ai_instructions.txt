@@ -1,9 +1,0 @@
-Project Instructions
-This is meant to be a static site to replace my Ghost blog. The idea is to use Gatsby to serve up content written in .md files, so adding a new blog entry is as easy as writing a new .md file.
-I intend to keep my images small and therefore do not need anything more complicated than a folder in the project from which they can be referenced in the markdown files.
-Keep to the same general theme and look of the current site while making useful enhancements.  
-
-General Instructions: 
-1. At the end of every action sequence, write a log entry with the current time and date to a file called ai_log.txt in the root of the project. If the file does not exist, create it. The log entries should briefly but completely summarize the work that was done and the functionality that was accomplished. 
-2. At the start of every action sequence, read the ai_log.txt file at the root of the project, if it exists, to understand what is going on and what was done so far.
-3. In the root of the project there is folder called helping_the_ai. This contains useful context aids. In no case should the contents of that folder be modified.   

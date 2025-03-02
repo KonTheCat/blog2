@@ -195,7 +195,7 @@ body {
 
 .page-title {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   font-weight: 800;
   color: #ffffff;
 }
@@ -513,8 +513,8 @@ th {
 .blog-post-content h4,
 .blog-post-content h5,
 .blog-post-content h6 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 
 .blog-post-content p {
