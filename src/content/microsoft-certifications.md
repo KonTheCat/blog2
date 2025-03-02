@@ -5,8 +5,6 @@ title: "Microsoft Certifications: Why and How"
 featured: false
 ---
 
-# Microsoft Certifications: Why and How
-
 # Establishing Credibility - or Why Should I Listen to This Guy?
 
 I think you should read this if you have some interest in getting Microsoft certifications, especially if you are at the start of your certification journey, or you are not getting certs as quickly as you would like to, or you have not really started the journey, you just keep thinking about it or delaying it. I think you should listen specifically to me because over the last 3 years I have passed fifteen certification exams. During the same time my salary doubled, I went from a rather junior project engineer to a Sr. Cloud Engineer and the lead of a small team. I think certifications were a huge help in this journey.  

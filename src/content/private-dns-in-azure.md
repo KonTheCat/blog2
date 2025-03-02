@@ -6,8 +6,6 @@ featuredImage: "../images/blog/private-dns-azure/dns.png"
 featured: false
 ---
 
-# Private DNS in Azure - It's always DNS
-
 ## It's Always DNS
 
 ![DNS](../images/blog/private-dns-azure/dns.png)

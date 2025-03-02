@@ -6,8 +6,6 @@ featuredImage: "../images/blog/memeql-day/memequery.png"
 featured: false
 ---
 
-# MemeQL Day
-
 Today I queried for a meme for the first time, making today MemeQL Day.
 
 ![MemeQL Query Interface](../images/blog/memeql-day/memequery.png)

@@ -5,8 +5,6 @@ title: 'Exception calling "Execute" with "1" argument(s): "Object reference not 
 featured: false
 ---
 
-# Exception calling "Execute" with "1" argument(s): "Object reference not set to an instance of an object." – Add-StorageTableRow error
-
 Google searches for the error lead down the path of errors with Azure tools. This was not the issue for me. The issue for me was that some of the keys in the hashtable I was using to submit the other entity properties were null. Below is the code for how I cleaned up the hashtable and the full xml of the error for SEO magic.
 
 ```

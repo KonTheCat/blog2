@@ -5,8 +5,6 @@ title: "Creating Cosmos DB container with vector embedding policy without accoun
 featured: true
 ---
 
-# Creating Cosmos DB container with vector embedding policy without account key
-
 # TL;DR
 
 Use the CosmosDBManagementClient (control plane), not the CosmosClient (data plane) when creating a Cosmos DB container with a vector embedding and authenticating with Entra ID. Key-based authentication works just fine with the CosmosClient. Hopefully, Microsoft will fix this soon. In the meantime, hopefully, this saves someone some time.

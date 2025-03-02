@@ -6,8 +6,6 @@ featuredImage: "../images/blog/azure-vpn-gateway/diagram.png"
 featured: true
 ---
 
-# Azure virtual network gateway can forward spoke-hub-spoke traffic, etc.
-
 ## Why this?
 
 Glad you asked, several reasons:

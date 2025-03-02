@@ -6,8 +6,6 @@ featuredImage: "../images/blog/dynamic-dns-azure-automation/featured.png"
 featured: false
 ---
 
-# Dynamic DNS with Azure Automation Runbook Hybrid Worker
-
 ![Dynamic DNS with Azure Automation Runbook Hybrid Worker](../images/blog/dynamic-dns-azure-automation/featured.png)
 
 ### TL;DR

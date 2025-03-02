@@ -5,8 +5,6 @@ title: "Where is InvocationId in Azure Function PowerShell v2?"
 featured: false
 ---
 
-# Where is InvocationId in Azure Function PowerShell v2?
-
 Short version:  
 For the v1 runtime, there is a nice document that describes where this is. [https://github.com/Azure/azure-functions-host/wiki/Retrieving-information-about-the-currently-running-function](https://github.com/Azure/azure-functions-host/wiki/Retrieving-information-about-the-currently-running-function)  
 For the v2 runtime, there was no such luck. After looking at the environment variables and just the variables available when running the function I found it under $TriggerMetadata.InvocationId.

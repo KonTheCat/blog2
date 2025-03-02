@@ -5,9 +5,7 @@ title: "Monitoring the Office 365 Audit Log - For MSPs (Legacy)"
 featured: true
 ---
 
-# Monitoring the Office 365 Audit Log - For MSPs (Legacy)
-
-Note: With the [changes to security requirements for Microsoft partners](https://docs.microsoft.com/en-us/partner-center/partner-security-requirements) this solution is no longer feasible, as it relies on being able to authenticate into an account that has delegated admin access to client tenants without MFA. It will be kept around for demonstration purposes.
+Note: With the [changes to security requirements for Microsoft partners](https://docs.microsoft.com/en-us/partner-center/partner-security-requirements) this solution is no longer feasible, as it relies on being able to authenticate into an account that has delegated admin access to client tenants without MFA. It will be kept around for demonstration purposes. This is also where it all started for me in terms of running code in the cloud, so I keep this up for that reason too.
 
 Does this sound too familiar? A user hands over their O365 username and password to a phishing attack. The attacker sets up a rule to forward to himself and delete all inbound mail. We find out only through calls about possible hacking or tickets, and by then hours may have passed.
 
