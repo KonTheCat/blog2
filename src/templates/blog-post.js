@@ -18,12 +18,6 @@ export default function BlogPostTemplate({ data }) {
           <p className="blog-post-date">{frontmatter.date}</p>
         </header>
 
-        {featuredImg && (
-          <div className="blog-post-featured-image">
-            <GatsbyImage image={featuredImg} alt={frontmatter.title} />
-          </div>
-        )}
-
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
