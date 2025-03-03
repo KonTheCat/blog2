@@ -492,3 +492,19 @@ Removed the Blog Archive from author, quick-things, and quotes pages while maint
    - Ensured the main content still appears in the blogs-main-content column
 
 This change removes the Blog Archive navigation from the author, quick-things, and quotes pages while preserving the two-column layout structure. The pages now have a cleaner appearance without the archive links, but maintain the same overall layout and formatting.
+
+2025-03-02 11:03:15 PM (America/New_York, UTC-5:00)
+
+Reduced the size of featured images on the main page and blogs page:
+
+1. Updated Image Dimensions in GraphQL Queries:
+   - Modified the GraphQL query in src/pages/index.js to reduce featured image dimensions from 800x400 to 600x300
+   - Modified the GraphQL query in src/pages/blogs.js to reduce featured image dimensions from 800x400 to 600x300
+   - Modified the GraphQL query in src/templates/blog-post.js to reduce featured image width from 1200 to 900
+
+2. Testing and Verification:
+   - Started the Gatsby development server to verify the changes
+   - Confirmed that the featured images are now smaller on both the main page and blogs page
+   - Verified that the images maintain their aspect ratio and quality with the new dimensions
+
+These changes address the user's concern that the featured photos on the main page were too big. The reduced image dimensions provide a more balanced layout while still ensuring the images are clear and visually appealing. The smaller image sizes will also improve page load performance.
