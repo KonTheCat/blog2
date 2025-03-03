@@ -24,3 +24,7 @@ I substitute my own conscience for God, but you do as you will with this one.
 > "Can PowerShell Remoting v2 and v3 talk to each other? Yes. There’s this process where they talk to each other, like two dogs singing each other’s butts, and figure out each other’s capabilities."  
 > "Being agile is great. But be careful with hacking code. It’s a lot like peeing your pants: at first, it’s nice. Warm, and moist. But then you have to live with the consequences."  
 > From: https://web.archive.org/web/20161024221804/http://snoverisms.com/
+
+> "Best LLM" is like "Freshest Fish".  
+> Yes.... for now.  
+> From LinkedIn, 2/~28/2025
