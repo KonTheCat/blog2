@@ -3,14 +3,31 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import BlogNavigation from "../components/blog-navigation";
+import TagHeatmap from "../components/tag-heatmap";
 
-const BlogsPage = ({ data }) => {
-  const posts = data.allMarkdownRemark.nodes;
+const BlogsPage = ({ data, location }) => {
+  const searchParams = new URLSearchParams(location.search);
+  const tagFilter = searchParams.get("tag");
+
+  const allPosts = data.allMarkdownRemark.nodes;
+  const posts = tagFilter
+    ? allPosts.filter(
+        (post) =>
+          post.frontmatter.tags && post.frontmatter.tags.includes(tagFilter)
+      )
+    : allPosts;
 
   return (
     <Layout>
       <div className="blogs-page">
-        <h1 className="page-title">All Blog Posts</h1>
+        <h1 className="page-title">
+          {tagFilter ? `Posts tagged with "${tagFilter}"` : "All Blog Posts"}
+          {tagFilter && (
+            <Link to="/blogs" className="clear-filter">
+              (Clear filter)
+            </Link>
+          )}
+        </h1>
 
         <div className="blogs-layout">
           <div className="blogs-main-content">
@@ -71,6 +88,7 @@ const BlogsPage = ({ data }) => {
           </div>
           <div className="blogs-sidebar">
             <BlogNavigation posts={posts} />
+            <TagHeatmap posts={allPosts} />
           </div>
         </div>
       </div>
@@ -100,6 +118,7 @@ export const pageQuery = graphql`
           slug
           title
           featured
+          tags
           featuredImage {
             childImageSharp {
               gatsbyImageData(width: 600, height: 300, layout: CONSTRAINED)

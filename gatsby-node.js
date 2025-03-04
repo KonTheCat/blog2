@@ -17,6 +17,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       author: String
       source: String
       featured: Boolean
+      tags: [String]
     }
   `;
   createTypes(typeDefs);

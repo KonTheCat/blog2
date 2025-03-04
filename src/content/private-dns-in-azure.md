@@ -4,6 +4,7 @@ date: "2022-04-23"
 title: "Private DNS in Azure - It's always DNS"
 featuredImage: "../images/blog/private-dns-azure/dns.png"
 featured: false
+tags: ["Azure", "DNS", "Networking", "Private Link", "Troubleshooting"]
 ---
 
 ## It's Always DNS

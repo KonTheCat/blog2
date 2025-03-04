@@ -1,0 +1,22 @@
+2025-03-03 08:21:42 PM (America/New_York, UTC-5:00)
+
+Updated blog posts with tags to enhance the tag heatmap functionality:
+
+1. Tag Implementation:
+   - Added appropriate tags to 7 blog posts that were previously missing tags:
+     - dynamic-dns-with-azure-automation.md: Added tags ["Azure", "DNS", "Automation", "PowerShell", "Hybrid Worker"]
+     - dynamic-dns-in-azure-v2.md: Added tags ["Azure", "DNS", "Logic Apps", "KQL", "Log Analytics", "Azure Arc"]
+     - backup-vault-deletion.md: Added tags ["Azure", "Backup", "PowerShell", "Troubleshooting"]
+     - where-is-invocationid.md: Added tags ["Azure", "Azure Functions", "PowerShell", "Troubleshooting", "Logging"]
+     - schedule-disabling-azure-ad-user.md: Added tags ["Azure", "Azure AD", "Logic Apps", "Identity Management", "Automation"]
+     - monitoring-office-365-audit-log.md: Added tags ["Office 365", "Azure", "Automation", "PowerShell", "MSP", "Security"]
+     - add-storagetablerow-error.md: Added tags ["Azure", "PowerShell", "Storage Tables", "Error Handling", "Troubleshooting"]
+   - Ensured tags were relevant to the content of each blog post
+   - Maintained consistent tag naming conventions across all posts
+
+2. Tag Heatmap Enhancement:
+   - The existing tag-heatmap component now displays a more comprehensive set of tags
+   - Tags are displayed with varying font sizes based on their frequency across blog posts
+   - The heatmap provides better navigation by linking tags to filtered blog post lists
+
+This update enhances the site's navigation and content organization by implementing a comprehensive tagging system. The tag heatmap now provides users with a visual representation of the blog's content categories, making it easier to find related posts and explore topics of interest.

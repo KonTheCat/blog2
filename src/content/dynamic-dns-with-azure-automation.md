@@ -4,6 +4,7 @@ date: "2020-09-13"
 title: "Dynamic DNS with Azure Automation Runbook Hybrid Worker"
 featuredImage: "../images/blog/dynamic-dns-azure-automation/featured.png"
 featured: false
+tags: ["Azure", "DNS", "Automation", "PowerShell", "Hybrid Worker"]
 ---
 
 ![Dynamic DNS with Azure Automation Runbook Hybrid Worker](../images/blog/dynamic-dns-azure-automation/featured.png)

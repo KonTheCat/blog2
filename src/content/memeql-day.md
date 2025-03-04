@@ -4,6 +4,7 @@ date: "2023-07-27"
 title: "MemeQL Day"
 featuredImage: "../images/blog/memeql-day/memequery.png"
 featured: false
+tags: ["Python", "Cosmos DB", "Azure AI", "Memes", "Content Moderation"]
 ---
 
 Today I queried for a meme for the first time, making today MemeQL Day.

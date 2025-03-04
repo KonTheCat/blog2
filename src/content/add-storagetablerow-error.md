@@ -3,6 +3,8 @@ slug: "/exception-calling-execute-with-1-argument-s-object-reference-not-set-to-
 date: "2019-04-17"
 title: 'Exception calling "Execute" with "1" argument(s): "Object reference not set to an instance of an object." – Add-StorageTableRow error'
 featured: false
+tags:
+  ["Azure", "PowerShell", "Storage Tables", "Error Handling", "Troubleshooting"]
 ---
 
 Google searches for the error lead down the path of errors with Azure tools. This was not the issue for me. The issue for me was that some of the keys in the hashtable I was using to submit the other entity properties were null. Below is the code for how I cleaned up the hashtable and the full xml of the error for SEO magic.

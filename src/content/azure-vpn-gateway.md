@@ -4,6 +4,7 @@ date: "2022-07-05"
 title: "Azure virtual network gateway can forward spoke-hub-spoke traffic, etc."
 featuredImage: "../images/blog/azure-vpn-gateway/diagram.png"
 featured: true
+tags: ["Azure", "Networking", "VPN Gateway", "Hub-Spoke"]
 ---
 
 ## Why this?

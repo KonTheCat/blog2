@@ -4,6 +4,7 @@ date: "2019-09-06"
 title: "A tale of Backup Vault deletion"
 featuredImage: "../images/blog/backup-vault-deletion/error-message.png"
 featured: false
+tags: ["Azure", "Backup", "PowerShell", "Troubleshooting"]
 ---
 
 So I had a backup vault that was backing up an Azure Files share. From the Portal I [removed the share a protected item](https://docs.microsoft.com/en-us/azure/backup/backup-azure-delete-vault), so the backup vault now had no protected items. So now I should be able to delete the vault, right? Nope.

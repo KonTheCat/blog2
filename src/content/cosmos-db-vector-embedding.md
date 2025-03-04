@@ -3,6 +3,7 @@ slug: "/cosmos-db-vector-embedding"
 date: "2024-12-08"
 title: "Creating Cosmos DB container with vector embedding policy without account key"
 featured: true
+tags: ["Azure", "Cosmos DB", "Python", "Vector Search", "AI"]
 ---
 
 # TL;DR

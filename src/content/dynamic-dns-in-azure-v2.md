@@ -4,6 +4,7 @@ date: "2022-07-18"
 title: "Dynamic DNS in Azure v2: Heartbeat logs, Logic Apps, KQL - a concept"
 featuredImage: "../images/blog/dynamic-dns-v2/kql-rabbit-hole.png"
 featured: true
+tags: ["Azure", "DNS", "Logic Apps", "KQL", "Log Analytics", "Azure Arc"]
 ---
 
 ![Dynamic DNS in Azure v2: Heartbeat logs, Logic Apps, KQL - a concept](../images/blog/dynamic-dns-v2/kql-rabbit-hole.png)

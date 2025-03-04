@@ -10,13 +10,34 @@ export default function BlogPostTemplate({ data }) {
     ? getImage(frontmatter.featuredImage.childImageSharp.gatsbyImageData)
     : null;
 
+  // Add featured image to the blog post if available
+
   return (
     <Layout>
       <article className="blog-post">
         <header className="blog-post-header">
           <h1 className="blog-post-title">{frontmatter.title}</h1>
           <p className="blog-post-date">{frontmatter.date}</p>
+          {frontmatter.tags && frontmatter.tags.length > 0 && (
+            <div className="blog-post-tags">
+              {frontmatter.tags.map((tag, index) => (
+                <Link
+                  key={index}
+                  to={`/blogs?tag=${tag}`}
+                  className="blog-post-tag"
+                >
+                  {tag}
+                </Link>
+              ))}
+            </div>
+          )}
         </header>
+
+        {featuredImg && (
+          <div className="blog-post-featured-image">
+            <GatsbyImage image={featuredImg} alt={frontmatter.title} />
+          </div>
+        )}
 
         <div
           className="blog-post-content"
@@ -42,6 +63,7 @@ export const pageQuery = graphql`
         slug
         title
         featured
+        tags
         featuredImage {
           childImageSharp {
             gatsbyImageData(width: 900, quality: 90)

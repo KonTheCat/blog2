@@ -3,6 +3,7 @@ slug: "/monitoring-the-office-365-audit-log-for-msps"
 date: "2019-04-18"
 title: "Monitoring the Office 365 Audit Log - For MSPs (Legacy)"
 featured: true
+tags: ["Office 365", "Azure", "Automation", "PowerShell", "MSP", "Security"]
 ---
 
 Note: With the [changes to security requirements for Microsoft partners](https://docs.microsoft.com/en-us/partner-center/partner-security-requirements) this solution is no longer feasible, as it relies on being able to authenticate into an account that has delegated admin access to client tenants without MFA. It will be kept around for demonstration purposes. This is also where it all started for me in terms of running code in the cloud, so I keep this up for that reason too.

@@ -3,6 +3,8 @@ slug: "/microsoft-certifications-why-and-how"
 date: "2021-04-24"
 title: "Microsoft Certifications: Why and How"
 featured: false
+tags:
+  ["Microsoft", "Certifications", "Career", "Professional Development", "Azure"]
 ---
 
 # Establishing Credibility - or Why Should I Listen to This Guy?
