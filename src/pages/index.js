@@ -38,6 +38,23 @@ const IndexPage = ({ data }) => {
               </p>
               <p className="featured-post-excerpt">{featuredPost.excerpt}</p>
             </div>
+            {featuredPost.frontmatter.featuredImage && (
+              <div className="featured-post-image">
+                <Link
+                  to={featuredPost.frontmatter.slug}
+                  className="featured-image-link"
+                >
+                  <GatsbyImage
+                    image={getImage(
+                      featuredPost.frontmatter.featuredImage.childImageSharp
+                        .gatsbyImageData
+                    )}
+                    alt={featuredPost.frontmatter.title}
+                    className="featured-image"
+                  />
+                </Link>
+              </div>
+            )}
           </div>
         )}
 
@@ -75,7 +92,7 @@ const IndexPage = ({ data }) => {
 
                   <p className="post-excerpt">{post.excerpt}</p>
                 </div>
-                {featuredImg && index % 2 === 0 && (
+                {featuredImg && (
                   <Link
                     to={post.frontmatter.slug}
                     className="featured-image-link"
