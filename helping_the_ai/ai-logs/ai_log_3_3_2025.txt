@@ -20,3 +20,24 @@ Updated blog posts with tags to enhance the tag heatmap functionality:
    - The heatmap provides better navigation by linking tags to filtered blog post lists
 
 This update enhances the site's navigation and content organization by implementing a comprehensive tagging system. The tag heatmap now provides users with a visual representation of the blog's content categories, making it easier to find related posts and explore topics of interest.
+
+2025-03-03 08:35:47 PM (America/New_York, UTC-5:00)
+
+Implemented tag filtering functionality for blog posts:
+
+1. Tag Filtering Implementation:
+   - Updated the blogs.js page to filter posts based on the selected tag from the URL query parameter
+   - Modified the page title to show which tag is currently being filtered
+   - Added a "Clear filter" link to allow users to return to viewing all posts
+   - Ensured the tag heatmap continues to show all available tags even when filtering is active
+
+2. UI Enhancements:
+   - Added CSS styles for the "Clear filter" link to maintain consistent design
+   - Improved the page title layout to accommodate the filter information
+   - Ensured the tag heatmap component uses the complete list of posts for tag calculation
+
+3. Blog Post Template Improvements:
+   - Enhanced the blog-post.js template to display featured images
+   - Ensured tag links in individual blog posts correctly link to filtered blog lists
+
+This implementation creates a seamless tag-based navigation experience. Users can now click on any tag (either from the tag heatmap or from individual blog posts) to see a filtered list of posts with that specific tag. This makes content discovery more intuitive and helps users find related content more easily.
