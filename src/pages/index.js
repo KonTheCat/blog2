@@ -25,7 +25,10 @@ const IndexPage = ({ data }) => {
           <div className="featured-post">
             <div className="featured-post-content">
               <h2 className="featured-post-title">
-                <Link to={featuredPost.frontmatter.slug}>
+                <Link
+                  to={featuredPost.frontmatter.slug}
+                  className="post-title-link"
+                >
                   {featuredPost.frontmatter.title}
                 </Link>
               </h2>

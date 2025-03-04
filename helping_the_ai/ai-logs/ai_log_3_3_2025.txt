@@ -42,14 +42,16 @@ Implemented tag filtering functionality for blog posts:
 
 This implementation creates a seamless tag-based navigation experience. Users can now click on any tag (either from the tag heatmap or from individual blog posts) to see a filtered list of posts with that specific tag. This makes content discovery more intuitive and helps users find related content more easily.
 
-2025-03-03 09:59:34 PM (America/New_York, UTC-5:00)
+2025-03-03 10:18:15 PM (America/New_York, UTC-5:00)
 
-Enhanced link visibility in the blog:
+Fixed inconsistent blog post title color on the homepage:
 
-1. Link Styling Improvement:
-   - Updated the global CSS to make links more visually distinct from regular text
-   - Changed link color from white (#ffffff) to bright blue (#0099ff) to stand out against the black background
-   - Added a hover state that changes links to a different shade of blue (#4a69bd)
-   - Maintained text decoration behavior (no underline by default, underline on hover)
+1. Issue Identification:
+   - The first (featured) blog post title was displaying in blue (#0099ff) while other blog post titles were displaying in white (#ffffff)
+   - This inconsistency was caused by the featured post title link not having the "post-title-link" CSS class applied
 
-This update improves the user experience by making hyperlinks immediately recognizable within the content. Links now stand out visually from the surrounding text, making navigation more intuitive while maintaining the site's overall aesthetic.
+2. Solution Implementation:
+   - Modified src/pages/index.js to add the "post-title-link" class to the Link component for the featured post
+   - This ensures all blog post titles now consistently display in white (#ffffff) as defined in the CSS
+
+This fix maintains visual consistency across the blog, ensuring all post titles have the same appearance regardless of whether they are featured or regular posts. The change improves the overall user experience by providing a more cohesive and polished design.
