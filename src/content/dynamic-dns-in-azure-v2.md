@@ -7,8 +7,6 @@ featured: true
 tags: ["Azure", "DNS", "Logic Apps", "KQL", "Log Analytics", "Azure Arc"]
 ---
 
-![Dynamic DNS in Azure v2: Heartbeat logs, Logic Apps, KQL - a concept]
-
 TL; DR - We take real public IP data from heartbeat logs of VM Insights. We also use Logic Apps to add in tag data, which connects computers with hostnames, as well as Azure DNS data, which gives us the DNS IPs for hostnames. Where we find that the heartbeat IP for a hostname no longer matches the DNS IP, we fix it by ARM template deployment from a Logic App.
 
 ## Preamble
